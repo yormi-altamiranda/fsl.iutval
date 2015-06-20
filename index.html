@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/letras.css">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
@@ -40,8 +41,32 @@
           </button>
           <a class="navbar-brand" href="#">Festival del Software Libre</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
+        <div id="navbar" class="navbar-collapse collapse" id="navbar">
+          <!-- este ul crea una lista desordenada y li son los Item
+            la class active seleciona el item por defecto ..
+            hay solo te queda cambiar los nombre por el que tu tienes pensado -->
+           <ul class="nav navbar-nav">
+             <li class="active"><a href="">Inicio</a></li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                    Menu 1 <span class="caret"></span>
+                  </a>
+                   <ul class="dropdown-menu">
+                      <li><a href="#">Sub Menu #1</a></li>
+                      <li><a href="#">Sub Menu #2</a></li>
+                      <li class="divider"></li> 
+                      <li><a href="#">Sub Menu #3</a></li>
+                   </ul>
+
+              </li>
+             <li><a href="#">Item 2</a></li>
+             <li><a href="#">Item 3</a></li>
+             <li><a href="#">Item 4</a></li>
+           </ul>   
+
+         <!-- quite los botones y el formualario 
+
+         <form class="navbar-form navbar-right" role="form">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
             </div>
@@ -49,7 +74,8 @@
               <input type="password" placeholder="Password" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          </form> -->
+
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
